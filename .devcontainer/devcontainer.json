@@ -1,0 +1,23 @@
+{
+    "name": "OptiXRayTracer",
+    "build": {
+        "dockerfile": "./../Dockerfile",
+        "context": "..",
+        "args": {
+            "VARIANT": "12.2.0-devel-ubuntu20.04"
+        }
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "editor.formatOnSave": true
+    },
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-vscode.vscode-typescript-next",
+        "ms-python.python"
+    ],
+    "runArgs": ["--gpus", "all"],
+    "remoteUser": "vscode",
+    "postCreateCommand": "echo 'Container created'",
+}

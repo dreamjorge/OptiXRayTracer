@@ -1,0 +1,4 @@
+// raygen.ptx (this PTX code could be more advanced)
+extern "C" __global__ void __raygen__simple() {
+    // Sample ray generation logic here
+}
